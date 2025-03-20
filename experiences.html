@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aperçu - Reina D. Angoujard</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the same CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    
+
+    <!-- experiences Section -->
+    <!-- New Page Content -->
+<section class="new-section">
+    <h2>Mes Expériences Clés</h2>
+    <div class="new-container">
+        <div class="new-content-box">
+            <img src="logo.png" alt="Logo 1">
+            <h3>Consultante en Communication Stratégique (2021 - présent)</h3>
+            <p>Depuis 2021, j'accompagne diverses entreprises, ONG et startups dans la définition de leurs stratégies de communication, la création de contenu et l'évaluation de l'impact de leurs actions. Mon rôle inclut également le coaching de dirigeants et d'équipes dans le développement de leurs projets de communication et la structuration de leur identité numérique.</p>
+        </div>  
+        <div class="new-content-box">
+            <img src="Meedan Logo.png" alt="Logo 2">
+            <h3>Responsable Communication & Impact (2021 - 2024) | Meedan (Skoll Award for Social Innovation)</h3>
+            <p>J'ai dirigé la stratégie de communication, piloté des campagnes, amélioré le site web, créé des contenus divers (blogs, articles, brochures), co-conçu la "théorie du changement", élaboré un guide SEA pour les responsables de programme, et rédigé trois rapports annuels pour évaluer l'impact du programme Check Global.</p>
+        </div>
+        <div class="new-content-box">
+            <img src="Berytech Logo.png" alt="Logo 3">
+            <h3>Directrice de la Communication et de la Sensibilisation (2017 - 2021) | Berytech</h3>
+            <p>J'ai dirigé la communication d'une organisation incubatrice de startups au Liban, en développant des stratégies pour des programmes dans des secteurs variés tels que l’agroalimentaire, les technologies propres et l'autonomisation des femmes. J'ai également participé à la gestion de crises majeures, telles que l'explosion du port de Beyrouth, tout en supervisant la production du rapport annuel d'impact.</p>
+        </div>
+        <div class="new-content-box">
+            <img src="logo aud.jpg" alt="Logo 4">
+            <h3>Directrice de la Communication (2007 - 2017) | Université Américaine de Dubaï</h3>
+            <p>J'ai supervisé la communication de l'université en redéfinissant son image de marque et en restructurant sa présence digitale. Cette mission m’a permis de mettre en place des campagnes multicanaux visant à renforcer la notoriété et l'engagement des étudiants, tout en consolidant des partenariats stratégiques avec des acteurs majeurs du secteur éducatif et technologique.</p>
+        </div>
+    </div>
+</section>
+
+<div id="footer-placeholder"></div>
+
+
+    <script src="scripts.js"></script>
+<script>
+    // Load the navbar dynamically
+    fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading navbar:', error));
+
+    // Load the footer dynamically
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading footer:', error));
+</script>
+</body>
+</html>

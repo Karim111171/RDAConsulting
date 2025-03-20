@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aperçu - Reina D. Angoujard</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the same CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    
+
+    <!-- Aperçu Section -->
+    <section id="apercu" class="apercu">
+        <div class="container">
+            <div class="apercu-top">
+                <div class="apercu-image">
+                    <img src="rey.jpg" alt="Reina D. Angoujard">
+                </div>
+                <div class="apercu-content">
+                    <h2>Un aperçu de qui je suis, de ce qui me motive</h2>
+                    <p>Ma vie s'étend à travers les cultures et les continents. Née au Liban, élevée entre l'Arabie Saoudite et la France, puis résidante aux Émirats arabes unis avant de m'installer en France avec mon mari, j'ai eu la chance d'embrasser diverses perspectives et expériences. Cette expérience a non seulement perfectionné mes capacités multilingues, mais m'a également inculqué une profonde appréciation et l'importance de l'inclusion. <br>J’ai les traits de caractères typiques d’une aînée de quatre filles, donc j'assume naturellement des rôles de leadership, de résolution de problèmes et de responsabilité. Ces qualités, associées à ma volonté innée d’ouvrir la voie, ont fait de moi une co-équipière proactive et efficace. <br>Au-delà de mes efforts professionnels, je trouve réconfort et joie dans la pâtisserie. Il y a quelque chose de magnifiquement élémentaire dans le fait de transformer des ingrédients de base en une gamme de desserts délicieux. Tout comme la pâtisserie, je considère les gens comme des combinaisons uniques d’éléments fondamentaux, chacun avec sa propre saveur et texture. Cette perspective guide mon approche de la compréhension et de la connexion avec les autres à un niveau plus profond. <br>De plus, je crois fermement au pouvoir du plaidoyer interne au sein des organisations. Une communication et un leadership solides favorisent un environnement de travail positif dans lequel les employés s'épanouissent et contribuent de manière significative au succès de l'entreprise. Au fond, je suis animée par une véritable passion pour l'autonomisation des individus et pour le développement d'équipes cohésives et solidaires.<br>Essentiellement, mon parcours, mes valeurs et mes expériences tournent tous autour d’un thème central : les gens. Je m'engage à mettre à profit mes compétences et mon point de vue pour favoriser la collaboration, susciter des changements positifs et contribuer au succès collectif d’une organisation.</p>
+                </div>
+            </div>
+            </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+    
+    <script src="scripts.js"></script>
+<script>
+    // Load the navbar dynamically
+    fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading navbar:', error));
+
+    // Load the footer dynamically
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading footer:', error));
+</script>
+</body>
+</html>
